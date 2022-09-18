@@ -7,4 +7,4 @@ radio = parseInt(prompt('Ingresar el radio de la cinferencia:'));
 
 circunferencia = (radio * 3.1416 * 2);
 
-document.write( 'La circunferenica: '+ circunferencia + 'cm');
+document.write( 'La circunferencia: '+ circunferencia + 'cm');
