@@ -1,25 +1,42 @@
+/* Dado un vector de enteros, comprobar el mayor, el menor y por último la media de todos*/
 
-/* Se pide ingresar 2 números. Mostrar los números ordenados de forma ascendente*/
+function cargarejemplo(){
 
-const number = document.getElementById('numbers');
-const resutl = document.getElementById('result');
-
-let a=prompt('Introduzca el primer numero');
-let b=prompt('Introduzca el segundo numero');
-
-
-numbers.textContent = `Los numeros introducidos son ${a}, ${b}`
-
-
-// ejercicio//
-
-if (a>b) {
-    resutl.textContent = `El orden es: ${b}, ${a}`
- } else if (b == a){
-    resutl.textContent = `Son iguales`
- }else {
-    resutl.textContent = `El orden es: ${a}, ${b}`
- }
-
-    
-  
+   document.getElementById("text").value="5,99,43,12,37";
+   
+   }
+   function Reiniciar(){
+   location.reload();
+   }
+   
+   function calcular(){
+   var array = document.getElementById("text").value.split(/,/);
+   
+   var mayor=-Infinity,menor=+Infinity,suma=0,media=0;
+   
+   //SUMA
+   for(i=0;i<array.length;i++){
+   suma=parseInt(array[i])+suma;
+   }
+   
+   //MEDIA
+   media=suma/array.length;
+   
+   //MENOR
+   for(i=0;i<array.length;i++){
+   if(parseInt(array[i])<menor) menor=array[i];
+   }
+   
+   //MAYOR
+   for(i=0;i<array.length;i++){
+   if(parseInt(array[i])>mayor) mayor=array[i];
+   }
+   
+   //RESULTADO
+   
+   document.getElementById("resultado").innerHTML="La suma es:"+suma+"<br>"+
+                                       "La media es:"+media+"<br>"+
+                                       "El mayor es:"+mayor+"<br>"+
+                                       "El menor es:"+menor+"<br>"
+   
+   }

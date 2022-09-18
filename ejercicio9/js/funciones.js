@@ -1,24 +1,21 @@
-/* A un trabajador le pagan según sus horas y una tarifa de pago por horas. si la cantidad de horas
-trabajadas es mayor a 80 horas. la tarifa se incrementa en un 20% para las horas extras. calcular el
-salario del trabajador dadas las horas trabajadas y la tarifa*/
+/*Ingresar n valores enteros, y luego ordenarlos*/
 
+function ejemplo() {
 
-let trabajador=prompt('Introduzca el nombre del trabajador');
-let horas=prompt('Introduzca las horas trabajadas');
-let pghoras=prompt('Introduzca su tarifa por hora');
-
-
-var  pagototal =horas * pghoras 
-var pagoextras = pagototal + (pagototal * 0.20)
-
-document.write( 'El nombre del trabajador es; '+ trabajador);
-
-
-// ejercicio//
-
-if (horas < 80) {
-    document.write( '<br>','Su sueldo es: '+ pagototal);
- }else {
-    document.write( '<br>','Su sueldo es: '+ pagoextras)
- }
-
+   var miArrayOriginal = [1, 4, 2, 9, 11, 44, 111, 7, 4];
+   
+   var miArray = [1, 4, 2, 9, 11, 44, 111, 7, 4];
+   
+   var msg ='El array original es: ' + miArrayOriginal +'\n';
+   
+   msg = msg + 'Ordenado de mayor a menor es ' + miArray.sort(deMayorAMenor)+'\n';
+   
+   msg = msg + 'Ordenado de menor a mayor es ' + miArray.sort(deMenorAMayor)+'\n';
+   
+   alert(msg);
+   
+   }
+   
+   function deMenorAMayor(elem1, elem2) {return elem1-elem2;}
+   
+   function deMayorAMenor(elem1, elem2) {return elem2-elem1;}

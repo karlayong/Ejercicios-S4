@@ -1,23 +1,20 @@
-/* Escribir un programa que permita ingresar 6 notas. Las notas se reparten de la siguiente manera: 2
-notas de la unidad 1, 2 notas de la unidad 2 y 2 notas de la unidad 3. Se pide mostrar el promedio de
-las notas de cada unidad y el promedio general de las 3 unidades*/
+/* Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. Dicha calificación
+se compone de los siguientes porcentajes:
+55% del promedio de sus tres calificaciones parciales.
+30% de la calificación del exámen final.
+15% de la calificación de un trabajo final*/
 	
-var alumno = prompt("Ingresa el nombre del alumno")
-nota1 = parseInt(prompt('Ingresar nota 1'));
-nota2 = parseInt(prompt('Ingresar nota 2'));
-nota3 = parseInt(prompt('Ingresar nota 3'));
-nota4 = parseInt(prompt('Ingresar nota 4'));
-nota5 = parseInt(prompt('Ingresar nota 5'));
-nota6 = parseInt(prompt('Ingresar nota 6'));
-
-pro1 = (nota1 + nota2) / 2;
-pro2 = (nota3 + nota4) / 2;
-pro3 = (nota5 + nota6) / 2;
-progeneral = (pro1 + pro2 + pro3) /3;
-
-
-document.write( 'Alumno: '+ alumno);
-document.write( '<br>','Promedio de la 1ra unidad: '+ pro1);
-document.write( '<br>','Promedio de la 2da unidad: '+ pro2);
-document.write( '<br>','Promedio de la 3ra unidad: '+ pro3);
-document.write( '<br>','PROMEDIO GENERAL: '+ progeneral);
+function algoritmo()
+{
+    let calificacion_final, examen_final, parcial_1, parcial_2, parcial_3;
+    let promedio_parciales, trabajo_final;
+    examen_final = parseFloat (document.formulario1.examen_final.value);
+    parcial_1 = parseFloat (document.formulario1.parcial_1.value);
+    parcial_2 = parseFloat (document.formulario1.parcial_2.value);
+    parcial_3 = parseFloat (document.formulario1.parcial_3.value);
+    trabajo_final = parseFloat (document.formulario1.trabajo_final.value);
+    promedio_parciales=(parcial_1+parcial_2+parcial_3)/3;
+    calificacion_final=promedio_parciales*0.55+examen_final*0.3+trabajo_final*0.15;
+    document.formulario1.calificacion_final.value = calificacion_final;
+    document.formulario1.promedio_parciales.value = promedio_parciales;
+}

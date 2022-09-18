@@ -1,7 +1,14 @@
 
-/* Dado un tiempo en minutos, calcular los días, horas y minutos que le corresponden*/
+/* Realizar la serie de Fibonacci.*/
 
 
-let minuto = parseInt(prompt("ingrese la cantidad de minutos a convetir"));
-let result = (minuto * 1) / 60;
-document.write(minuto + "minuto es: " + result + "horas")
+var a=new Array();
+
+a[0]=1;
+a[1]=1;
+
+for(i=2;i<50;i++){
+  a[i]=a[i-1]+a[i-2];
+  document.write(a[i]+"<br/>");
+
+}
