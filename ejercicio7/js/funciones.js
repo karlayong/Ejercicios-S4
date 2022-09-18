@@ -1,22 +1,12 @@
-/* Ingresar un número diferente de cero e indicar si es positivo o negativo*/
-
-const number = document.getElementById('numbers');
-const resutl = document.getElementById('result');
-
-let a=prompt('Introduzca un numero para saber si es + o - ');
+/* Escribir un programa al cual ingrese la velocidad de un móvil expresada en metros por segundo e
+imprima en pantalla la velocidad en kilómetros por horao*/
 
 
-numbers.textContent = `El numero introducido es ${a}`
+let ms=prompt('Introduzca la velocidad en metros por segundos');
+
+var  kmh = ms * 3.6
+
+document.write( 'La velocidad: '+ kmh + ' Km/h');
 
 
-// ejercicio//
-
-if (a>= 0) {
-    resutl.textContent = `El número es POSITIVO`
-
-}else {
-    resutl.textContent = `El número es NEGATIVO`
- }
-
-    
   

@@ -1,17 +1,19 @@
-/* Se pide ingresar el sueldo base y la cantidad de hijos de un empleado. La empresa ofrece una
-bonificación especial de S/. 80. por cada hijo. Realice un algoritmo que determine el monto de la
-bonificación y el monto total a pagar al trabajador.*/
+/* En un hospital existen tres áreas: Ginecología, Pediatría, Traumatología. El presupuesto anual del
+hospital se reparte conforme a la sig. tabla:
+Área: % del presupuesto:
+Ginecología 40%
+Traumatología 30%
+Pediatría 30%
+Obtener la cantidad de dinero que recibirá cada área, para cualquier monto presupuestal.*/
 
-	var n1,n2,vsuma;
-	
-	sueldo = parseInt(prompt('Ingresar su sueldo base'));
-	hijos = parseInt(prompt('Ingresar la cantidad de hijos'));
+presupuesto = parseInt(prompt('Ingresar el presupuesto anual: '));
 
-    bono = hijos * 80
-	
-	vsuma = sueldo + bono;
 
-    document.write('Su bonificación es '+bono);
-	document.write('<br>','Su monto total de pago es '+vsuma);
-    
-  
+ginecologia = presupuesto * 0.40;
+traumatologia = presupuesto * 0.30;
+pediatria = presupuesto * 0.30;
+
+document.write( 'El presupuesto anual es: ' + presupuesto);
+document.write( '<br>','El área de Ginecología recibe el 40%:  ' + ginecologia);
+document.write( '<br>','El área de Traumatología recibe 30%:  ' + traumatologia);
+document.write( '<br>','El área de Ginecología recibe 30%:  ' + pediatria);

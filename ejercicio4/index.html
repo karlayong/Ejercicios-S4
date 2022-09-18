@@ -7,6 +7,71 @@
     <title>Ejercicio 4</title>
 </head>
 <body>
+    <form name="formulario1">
+        <table style="text-align: left; margin-left: auto; margin-right: auto;">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="cantidad_de_billetes">Ingresa el valor de cantidad de euros:</label>
+                    </td>
+                    <td>
+                        <input name="cantidad_de_billetes" required="required" step="1" type="number" />
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" rowspan="1">
+                        <input value="Procesar" type="button" onclick="algoritmo();" />
+                        <input type="reset" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="billetes_de_50">Valor de billetes de 50:</label>
+                    </td>
+                    <td>
+                        <input name="billetes_de_50" step="1" type="number" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="billetes_de_20">Valor de billetes de 20:</label>
+                    </td>
+                    <td>
+                        <input name="billetes_de_20" step="1" type="number" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="billetes_de_10">Valor de billetes de 10:</label>
+                    </td>
+                    <td>
+                        <input name="billetes_de_10" step="1" type="number" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="monedas_de_5">Valor de monedas de 5:</label>
+                    </td>
+                    <td>
+                        <input name="monedas_de_5" step="1" type="number" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="monedas_de_1">Valor de monedas de 1:</label>
+                    </td>
+                    <td>
+                        <input name="monedas_de_1" step="1" type="number" />
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
     <script src="./js/funciones.js"></script>
 </body>
 </html>

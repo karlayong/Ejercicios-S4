@@ -1,10 +1,10 @@
-/* Se pide ingresar el nombre de un alumno y sus 2 notas. Mostrar como resultado el nombre del alumno y su promedio */
+/* Calcular el perímetro de una circunferencia dado su radio. Luego calcule el perímetro de la misma si
+se reduce al 50%. Luego calcule el perímetro de la misma si se reduce al 25% con respecto al resultado
+anterior */
 	
-var alumno = prompt("Ingresa el nombre del alumno")
-nota1 = parseInt(prompt('Ingresar nota 1'));
-nota2 = parseInt(prompt('Ingresar nota 2'));
+radio = parseInt(prompt('Ingresar el radio de la cinferencia:'));
 
-pro = (nota1 + nota2) / 2;
 
-document.write( 'Alumno: '+ alumno);
-document.write( '<br>','Promedio: '+ pro);
+circunferencia = (radio * 3.1416 * 2);
+
+document.write( 'La circunferenica: '+ circunferencia + 'cm');
